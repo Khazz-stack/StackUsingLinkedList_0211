@@ -70,6 +70,7 @@ int main(){
     while (choice !=5){
         cout << "1.phus\n";
         cout << "2.pop\n";
+        cout << "3.peek\n";
 
     }
     return 0;
