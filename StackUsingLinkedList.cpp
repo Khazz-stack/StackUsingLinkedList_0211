@@ -64,5 +64,11 @@ public:
 int main(){
     stack stack;
 
-    
+    int choice = 0;
+    int value;
+
+    while (choice !=5){
+        
+    }
+    return 0;
 }
