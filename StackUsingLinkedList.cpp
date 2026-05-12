@@ -16,6 +16,7 @@ public:
 class stack{
 private:
     Node *top; //pointer to the top node of the stack 
+
 public:
     stack(){
         top = NULL;
@@ -72,7 +73,39 @@ int main(){
         cout << "2.pop\n";
         cout << "3.peek\n";
         cout << "4.Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
 
+        switch (choice){
+            case 1:
+                 cout << "Enter the value to phus: ";
+                 cin >> value;
+                 stack.phus(value);//phus the entered value onto the stack
+                 break;
+            case 2:
+                 if (!stack.isEmpty()){
+                    stack.pop();//pop the top element from the stack
+                 }
+                 else{
+                    cout << "Stack is empty. Cannot pop." << endl;
+                 }
+                 break;
+            case 3:
+                 if (!stack.isEmpty()){
+                    stack.peek();//get the  value of the top element
+                 }
+                 else{
+                    cout << "Stack is empty. No top value." << endl;
+                 }
+                 break;
+            case 4:
+                 cout << "Exiting program." << endl;
+                 break;
+            default:
+                cout << "invalid choice. Try again." << endl;
+                break;                  
+        }
+        
     }
     return 0;
 }
