@@ -68,7 +68,7 @@ int main(){
     int value;
 
     while (choice !=5){
-        
+        cout << "1.phus\n";
     }
     return 0;
 }
