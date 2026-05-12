@@ -69,6 +69,8 @@ int main(){
 
     while (choice !=5){
         cout << "1.phus\n";
+        cout << "2.pop\n";
+
     }
     return 0;
 }
