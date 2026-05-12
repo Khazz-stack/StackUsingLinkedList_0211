@@ -20,6 +20,15 @@ public:
     stack(){
         top = NULL;
     }
+    int phus(int value){
+        Node *newNode = new Node();
+        newNode->data = value;
+        newNode->next = top;
+        top = newNode;
+        cout << "phus value: " << value << endl;
+        return value;
+    }
+
     
 };
 
